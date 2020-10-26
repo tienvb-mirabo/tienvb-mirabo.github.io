@@ -15,12 +15,21 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-text
+    <a-assets>
+        <img id="transpImage" src="robot.png">
+    </a-assets>
+    <a-image 
+        width="10" 
+        height="10"
+        src="#transpImage"
+        look-at="[gps-camera]"
+        gps-entity-place="latitude: 21.007700; longitude: 105.849610;"></a-image>
+      <!-- <a-text
         value="This content will always face you."
         look-at="[gps-camera]"
         scale="120 120 120"
         gps-entity-place="latitude: 21.007700; longitude: 105.849610;"
-      ></a-text>
+      ></a-text> -->
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
