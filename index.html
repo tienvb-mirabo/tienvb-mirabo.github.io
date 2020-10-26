@@ -24,33 +24,27 @@
     <a-assets>
         <img id="dog" src="dog.png">
     </a-assets>
-    <!-- <a-image 
-        width="10" 
-        height="10"
-        src="#transpImage"
-        look-at="[gps-camera]"
-        gps-entity-place="latitude: 21.007700; longitude: 105.849610;"></a-image> -->
 
     <a-image
         src="#place"
         look-at="[gps-camera]"
-        scale="15 15 15"
+        scale="50 50 50"
         gps-entity-place="latitude: 21.006933; longitude: 105.843174;"
     ></a-image>
 
-<a-image
-    src="#robot"
-    look-at="[gps-camera]"
-    scale="15 15 15"
-    gps-entity-place="latitude: 21.006347; longitude: 105.842388;"
-  ></a-image>
+    <a-image
+        src="#robot"
+        look-at="[gps-camera]"
+        scale="50 50 50"
+        gps-entity-place="latitude: 21.006347; longitude: 105.842388;"
+    ></a-image>
 
-  <a-image
+    <a-image
         src="#dog"
         look-at="[gps-camera]"
-        scale="15 15 15"
+        scale="50 50 50"
         gps-entity-place="latitude: 21.006568; longitude: 105.843839;"
-      ></a-image>
+    ></a-image>
 
       <!-- <a-text
         value="Nha C1"
@@ -73,9 +67,9 @@
         gps-entity-place="latitude: 21.006568; longitude: 105.843839;"
       ></a-text> -->
 
-      <a-camera 
-      gps-camera="simulateLatitude: 21.006237; simulateLongitude: 105.843135" 
-      rotation-reader> </a-camera>
+    <a-camera 
+        gps-camera="simulateLatitude: 21.006237; simulateLongitude: 105.843135" 
+        rotation-reader> </a-camera>
     </a-scene>
   </body>
 </html>
