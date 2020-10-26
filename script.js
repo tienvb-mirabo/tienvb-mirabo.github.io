@@ -52,7 +52,7 @@ function renderPlaces(places) {
        img.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
        img.setAttribute('src', `${src}`);
        img.setAttribute('look-at', '[gps-camera]');
-       img.setAttribute('scale', '1 1 1');
+       img.setAttribute('scale', '25 25 25');
     //    img.setAttribute('gltf-model', './assets/magnemite/scene.gltf');
     //    img.setAttribute('rotation', '0 180 0');
     //    img.setAttribute('animation-mixer', '');
