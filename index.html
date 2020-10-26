@@ -15,16 +15,44 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-    <!-- <a-assets>
-        <img id="transpImage" src="robot.png">
-    </a-assets> -->
+    <a-assets>
+        <img id="place" src="place.png">
+    </a-assets>
+    <a-assets>
+        <img id="robot" src="robot.jpg">
+    </a-assets>
+    <a-assets>
+        <img id="dog"" src="dog".jpg">
+    </a-assets>
     <!-- <a-image 
         width="10" 
         height="10"
         src="#transpImage"
         look-at="[gps-camera]"
         gps-entity-place="latitude: 21.007700; longitude: 105.849610;"></a-image> -->
-      <a-text
+
+    <a-image
+        src="#place"
+        look-at="[gps-camera]"
+        scale="15 15 15"
+        gps-entity-place="latitude: 21.006933; longitude: 105.843174;"
+    ></a-image>
+
+<a-image
+    src="#robot"
+    look-at="[gps-camera]"
+    scale="15 15 15"
+    gps-entity-place="latitude: 21.006347; longitude: 105.842388;"
+  ></a-image>
+
+  <a-text
+        src="#dog"
+        look-at="[gps-camera]"
+        scale="15 15 15"
+        gps-entity-place="latitude: 21.006568; longitude: 105.843839;"
+      ></a-text>
+
+      <!-- <a-text
         value="Nha C1"
         look-at="[gps-camera]"
         scale="15 15 15"
@@ -43,7 +71,7 @@
         look-at="[gps-camera]"
         scale="15 15 15"
         gps-entity-place="latitude: 21.006568; longitude: 105.843839;"
-      ></a-text>
+      ></a-text> -->
 
       <a-camera 
       gps-camera="simulateLatitude: 21.006237; simulateLongitude: 105.843135" 
