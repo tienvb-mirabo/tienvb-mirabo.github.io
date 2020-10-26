@@ -28,7 +28,15 @@ function staticLoadPlaces() {
                 lat: 21.006568,
                 lng: 105.843839,
             }
-        }
+        },
+        {
+            name: 'tree',
+            src: 'tree.png',
+            location: {
+                lat: 20.997403,
+                lng: 105.843586,
+            }
+        },
    ];
 }
 
