@@ -14,9 +14,11 @@
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <a-assets>
+            <img id="transpImage" src="robot.png">
+        </a-assets>
         
-        <a-image src="robot.jpg" gps-entity-place="latitude: 21.007700; longitude: 105.849610;"
-            ></a-image>
+        <a-image width="10" height="10" src="#transpImage" gps-entity-place="latitude: 21.007700; longitude: 105.849610;"></a-image>
 
         <!-- <a-text value="This will always face the user." look-at="[gps-camera]" scale="75 75 75"
             gps-entity-place="latitude: 21.007700; longitude: 105.849610"></a-text> -->
